@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /about/
+Disallow: /admin/
+Disallow: /archives/
+Disallow: /categories/
+Disallow: /css/
+Disallow: /images/
+Disallow: /img/
+Disallow: /js/
+Disallow: /lib/
+Disallow: /tags/
+Disallow: /xml/
+
+Sitemap: https://www.myql.xyz/sitemap.xml
+Sitemap: https://www.myql.xyz/submit_urls.txt

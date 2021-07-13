@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="zh-CN" data-default-color-scheme="&#34;auto&#34;"><head><meta charset="UTF-8"><link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/leicancun/img@main/ico/Natsume.ico"><link rel="icon" href="https://cdn.jsdelivr.net/gh/leicancun/img@main/ico/Natsume.ico"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><meta name="theme-color" content="#2f4154"><meta name="description" content="next 主题自定义友链方法~"><meta name="author" content="千泷"><meta name="keywords" content="暮雨千泷,next,hexo,hexo博客,个人博客"><link rel="manifest" href="/manifest.json"><title>hexo next 自定义友链页面 - 暮雨千泷</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css"><link rel="stylesheet" href="/lib/hint/hint.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-solarizedlight.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css"><link rel="stylesheet" href="/css/main.css"><script id="fluid-configs">var Fluid=window.Fluid||{},CONFIG={hostname:"www.myql.xyz",root:"/",version:"1.8.11",typing:{enable:!0,typeSpeed:70,cursorChar:"_",loop:!1},anchorjs:{enable:!0,element:"h1,h2,h3,h4,h5,h6",placement:"right",visible:"hover",icon:""},progressbar:{enable:!0,height_px:3,color:"#29d",options:{showSpinner:!1,trickleSpeed:100}},copy_btn:!0,image_zoom:{enable:!0,img_url_replace:["",""]},toc:{enable:!0,headingSelector:"h1,h2,h3,h4,h5,h6",collapseDepth:0},lazyload:{enable:!0,loading_img:"/img/loading.gif",onlypost:!1,offset_factor:2},web_analytics:{enable:!0,baidu:"c9a93032e81016c3e7c8621149dd8400",google:null,gtag:null,tencent:{sid:null,cid:null},woyaola:null,cnzz:null,leancloud:{app_id:"hbDijWxycCYIlgSH85N3Wqws-MdYXbMMI",app_key:"WVOoSL21AmbuBf5QWD0NWiKs",server_url:null}},search_path:"/local-search.xml"}</script><script src="/js/utils.js"></script><script src="/js/color-schema.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body><header style="height:70vh"><nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"><div class="container"><a class="navbar-brand" href="/">&nbsp;<strong>暮雨千泷</strong>&nbsp;</a> <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><div class="animated-icon"><span></span><span></span><span></span></div></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto text-center"><li class="nav-item"><a class="nav-link" href="/"><i class="iconfont icon-home-fill"></i> 首页</a></li><li class="nav-item"><a class="nav-link" href="/archives/"><i class="iconfont icon-archive-fill"></i> 归档</a></li><li class="nav-item"><a class="nav-link" href="/categories/"><i class="iconfont icon-category-fill"></i> 分类</a></li><li class="nav-item"><a class="nav-link" href="/tags/"><i class="iconfont icon-tags-fill"></i> 标签</a></li><li class="nav-item"><a class="nav-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://docs.myql.xyz"><i class="iconfont icon-bookmark-fill"></i> 收藏夹</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" target="_self" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="iconfont icon-th-large"></i> 藏宝箱</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="/about/"><i class="iconfont icon-user-fill"></i> 关于 </a><a class="dropdown-item" href="/links/"><i class="iconfont icon-link-fill"></i> 友链 </a><a class="dropdown-item" href="/admin/"><i class="iconfont icon-users"></i> Admin</a></div></li><li class="nav-item" id="search-btn"><a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i class="iconfont icon-search"></i>&nbsp;</a></li><li class="nav-item" id="color-toggle-btn"><a class="nav-link" target="_self">&nbsp;<i class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a></li></ul></div></div></nav><div class="banner" id="banner" parallax="true" style="background:url(https://cdn.jsdelivr.net/gh/leicancun/img@main/banner_img/mmexport1602581319886.webp) no-repeat center center;background-size:cover"><div class="full-bg-img"><div class="mask flex-center" style="background-color:rgba(0,0,0,.3)"><div class="page-header text-center fade-in-up"><span class="h2" id="subtitle" title="hexo next 自定义友链页面"></span><div class="mt-3"><span class="post-meta"><i class="iconfont icon-date-fill" aria-hidden="true"></i> <time datetime="2021-03-06 19:11" pubdate>2021年3月6日 晚上</time></span></div><div class="mt-1"><span class="post-meta mr-2"><i class="iconfont icon-chart"></i> 1.1k 字 </span><span class="post-meta mr-2"><i class="iconfont icon-clock-fill"></i> 19 分钟</span></div></div></div></div></div></header><main><div class="container-fluid nopadding-x"><div class="row nomargin-x"><div class="d-none d-lg-block col-lg-2"></div><div class="col-lg-8 nopadding-x-md"><div class="container nopadding-x-md" id="board-ctn"><div class="py-5" id="board"><article class="post-content mx-auto"><h1 style="display:none">hexo next 自定义友链页面</h1><div class="markdown-body"><p>因为 next 主题的升级，导致网上很多 next 主题添加友链的教程中路径出现变动，在此记录一下我查看大量教程后基于 next 主题<code>v8.2.2</code>配置自定义友链页面的方法。</p><!-- more --><p>本文基于<code>hexo-v5.4.0</code>，<code>next-v8.2.2</code></p><p>在<code>/_config.next.yml</code>(<a target="_blank" rel="noopener external nofollow noreferrer" href="https://theme-next.js.org/docs/getting-started/configuration.html">详细请查看此处</a>)文件中找到<code>styles.styl</code>去处“#”进行启用。</p><div class="code-wrapper"><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">custom_file_path:
+  style: source&#x2F;_data&#x2F;styles.styl<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div><p>找到<code>Menu Settings</code>添加<code>友链: /links || fas fa-link</code></p><div class="code-wrapper"><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">menu:
+  home: &#x2F; || fa fa-home
+  tags: &#x2F;tags&#x2F; || fa fa-tags
+  categories: &#x2F;categories&#x2F; || fa fa-th
+  archives: &#x2F;archives&#x2F; || fa fa-archive
+  #schedule: &#x2F;schedule&#x2F; || fa fa-calendar
+  #sitemap: &#x2F;sitemap.xml || fa fa-sitemap
+  #commonweal: &#x2F;404&#x2F; || fa fa-heartbeat
+  about:
+      default: &#x2F;about&#x2F; || fa fa-user
+      友链: &#x2F;links || fas fa-link
+      收藏夹: https:&#x2F;&#x2F;docs.myql.xyz&#x2F; || far fa-folder-open<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><p>按照<code>source/_data/styles.styl</code>路径新建<code>styles.styl</code>文件后，在<code>styles.styl</code>中添加以下内容：</p><div class="code-wrapper"><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#links</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">margin-top</span><span class="token punctuation">:</span> 5rem<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.links-content</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">margin-top</span><span class="token punctuation">:</span>1rem<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.link-navigation::after</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">" "</span><span class="token punctuation">;</span>
+ <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+ <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+ <span class="token property">font-size</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+ <span class="token property">padding</span><span class="token punctuation">:</span> 10px 20px<span class="token punctuation">;</span>
+ <span class="token property">border-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+ <span class="token property">transition-duration</span><span class="token punctuation">:</span> 0.15s<span class="token punctuation">;</span>
+ <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+ <span class="token property">display</span><span class="token punctuation">:</span>flex<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card:nth-child(odd)</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card:nth-child(even)</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card:hover</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span>1.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 2px 6px 0 <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.12<span class="token punctuation">)</span><span class="token punctuation">,</span> 0 0 6px 0 <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.04<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card a</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">border</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card .ava</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">width</span><span class="token punctuation">:</span> 3rem<span class="token important">!important</span><span class="token punctuation">;</span>
+ <span class="token property">height</span><span class="token punctuation">:</span> 3rem<span class="token important">!important</span><span class="token punctuation">;</span>
+ <span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token important">!important</span><span class="token punctuation">;</span>
+ <span class="token property">margin-right</span><span class="token punctuation">:</span> 1em<span class="token important">!important</span><span class="token punctuation">;</span>
+ <span class="token property">border-radius</span><span class="token punctuation">:</span>4px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card .card-header</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span>
+ <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+ <span class="token property">width</span><span class="token punctuation">:</span> 236px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card .card-header a</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+ <span class="token property">color</span><span class="token punctuation">:</span> #2bbc8a<span class="token punctuation">;</span>
+ <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+ <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card .card-header a:hover</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">color</span><span class="token punctuation">:</span> #d480aa<span class="token punctuation">;</span>
+ <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">.card .card-header .info</span> <span class="token punctuation">&#123;</span>
+ <span class="token property">font-style</span><span class="token punctuation">:</span>normal<span class="token punctuation">;</span>
+ <span class="token property">color</span><span class="token punctuation">:</span>#a3a3a3<span class="token punctuation">;</span>
+ <span class="token property">font-size</span><span class="token punctuation">:</span>14px<span class="token punctuation">;</span>
+ <span class="token property">min-width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+ <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
+ <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+ <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><p>按<code>source/about/links/index.md</code>路径新建<code>index.md</code>，这里强调一下，因为我将友链页面放在了<code>about</code>页面下，所以才是这样的路径，如果你需要直接在侧边栏添加，请去除路径中的<code>about</code></p><p>打开刚刚新建的<code>source/about/links/index.md</code>，添加以下内容：</p><div class="code-wrapper"><pre class="line-numbers language-md" data-language="md"><code class="language-md">---
+title: 友链
+type: links
+---
+
+&lt;div class&#x3D;&quot;links-content&quot;&gt;
+&lt;div class&#x3D;&quot;no-icon note warning&quot;&gt;&lt;div class&#x3D;&quot;link-info&quot;&gt;😁欢迎与我交换友链&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+&lt;div class&#x3D;&quot;link-navigation&quot;&gt;
+&#123;% for link in site.data.links.defaultlinks %&#125;
+&lt;div class&#x3D;&quot;card&quot;&gt;
+&lt;img class&#x3D;&quot;ava nomediumzoom&quot; src&#x3D;&quot;&#123;&#123; link.avatar &#125;&#125;&quot;&#x2F;&gt;
+&lt;div class&#x3D;&quot;card-header&quot;&gt;
+&lt;div&gt;&lt;a href&#x3D;&quot;&#123;&#123; link.site &#125;&#125;&quot; target&#x3D;&quot;_blank&quot;&gt; &#123;&#123; link.name &#125;&#125;&lt;&#x2F;a&gt; &lt;&#x2F;div&gt;
+&lt;div class&#x3D;&quot;info&quot;&gt;&#123;&#123; link.info &#125;&#125;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&#123;% endfor %&#125;
+&lt;&#x2F;div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><p>参考我的配置：</p><div class="code-wrapper"><pre class="line-numbers language-md" data-language="md"><code class="language-md">---
+title: 友链
+type: links
+---
+
+![友链封面](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;leicancun&#x2F;img@main&#x2F;banner_img&#x2F;wallhaven-72gzz3.webp)
+
+&lt;div class&#x3D;&quot;links-content&quot;&gt;
+&lt;div class&#x3D;&quot;no-icon note warning&quot;&gt;&lt;div class&#x3D;&quot;link-info&quot;&gt;😁欢迎与我交换友链&lt;&#x2F;div&gt;&lt;&#x2F;div&gt;
+&lt;div class&#x3D;&quot;link-navigation&quot;&gt;
+&#123;% for link in site.data.links.defaultlinks %&#125;
+&lt;div class&#x3D;&quot;card&quot;&gt;
+&lt;img class&#x3D;&quot;ava nomediumzoom&quot; src&#x3D;&quot;&#123;&#123; link.avatar &#125;&#125;&quot;&#x2F;&gt;
+&lt;div class&#x3D;&quot;card-header&quot;&gt;
+&lt;div&gt;&lt;a href&#x3D;&quot;&#123;&#123; link.site &#125;&#125;&quot; target&#x3D;&quot;_blank&quot;&gt; &#123;&#123; link.name &#125;&#125;&lt;&#x2F;a&gt; &lt;&#x2F;div&gt;
+&lt;div class&#x3D;&quot;info&quot;&gt;&#123;&#123; link.info &#125;&#125;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&#123;% endfor %&#125;
+&lt;&#x2F;div&gt;
+
+------
+
+&lt;div style&#x3D;&quot;text-align:center;&quot;&gt;&lt;span class&#x3D;&quot;with-love&quot; id&#x3D;&quot;animate1&quot;&gt;
+    &lt;i class&#x3D;&quot;fa fa-heart&quot;&gt;&lt;&#x2F;i&gt;
+  &lt;&#x2F;span&gt;留言添加友链&lt;span class&#x3D;&quot;with-love&quot; id&#x3D;&quot;animate2&quot;&gt;
+    &lt;i class&#x3D;&quot;fa fa-heart&quot;&gt;&lt;&#x2F;i&gt;
+  &lt;&#x2F;span&gt;&lt;&#x2F;div&gt;
+
+------
+
+&#123;% note success %&#125;
+
+**友链格式：**
+
+- 网站名称：暮雨千泷
+- 网站地址：https:&#x2F;&#x2F;www.myql.xyz
+- 网站描述：青天白日梦神仙
+- 网站Logo&#x2F;头像：https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;leicancun&#x2F;img@main&#x2F;images&#x2F;avatar.webp
+
+&#123;% endnote %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><p>在<code>source/_data/</code>下新建<code>links.yml</code>并添加以下内容</p><div class="code-wrapper"><pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">defaultlinks:
+  - name: 暮雨千泷 # 网站名称
+    site: https:&#x2F;&#x2F;www.myql.xyz # 网站地址
+    info: 青天白日梦神仙 # 网站描述
+    avatar: https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;leicancun&#x2F;img@main&#x2F;images&#x2F;avatar.webp # 网站头像<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><hr><p>参考文章：</p><ul><li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/qq_35479468/article/details/107454287?spm=1001.2014.3001.5501">Hexo+next主题自定义友情链接页面</a></li><li><a target="_blank" rel="noopener external nofollow noreferrer" href="https://tding.top/archives/73ce4e7.html">Hexo-NexT 新增友链</a></li></ul></div><hr><div><div class="post-metas mb-3"><div class="post-meta mr-3"><i class="iconfont icon-category"></i> <a class="hover-with-bg" href="/categories/hexo/">hexo</a></div><div class="post-meta"><i class="iconfont icon-tags"></i> <a class="hover-with-bg" href="/tags/hexo/">hexo</a> <a class="hover-with-bg" href="/tags/%E5%8F%8B%E9%93%BE/">友链</a> <a class="hover-with-bg" href="/tags/next/">next</a></div></div><p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p><div class="post-prevnext"><article class="post-prev col-6"><a href="/post/9c212729/"><i class="iconfont icon-arrowleft"></i> <span class="hidden-mobile">浏览器扩展推荐 ——Vimium C:键盘快捷键</span> <span class="visible-mobile">上一篇</span></a></article><article class="post-next col-6"><a href="/post/f9c5a8ca/"><span class="hidden-mobile">漫威观看顺序记录</span> <span class="visible-mobile">下一篇</span> <i class="iconfont icon-arrowright"></i></a></article></div></div><article class="comments" id="comments" lazyload><div id="twikoo"></div><script type="text/javascript">Fluid.utils.loadComments("#comments",(function(){Fluid.utils.createScript("https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js",(function(){var t=Object.assign({envId:"twikoo-8gw0nlb52597f6d8",region:"ap-shanghai",path:"window.location.pathname"},{el:"#twikoo",path:"window.location.pathname"});twikoo.init(t)}))}))</script><noscript>Please enable JavaScript to view the comments</noscript></article></article></div></div></div><div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn"><div id="toc"><p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p><div class="toc-body" id="toc-body"></div></div></div></div></div><a id="scroll-top-button" href="#" role="button"><i class="iconfont icon-arrowup" aria-hidden="true"></i></a><div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable modal-lg" role="document"><div class="modal-content"><div class="modal-header text-center"><h4 class="modal-title w-100 font-weight-bold">搜索</h4><button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body mx-3"><div class="md-form mb-5"><input type="text" id="local-search-input" class="form-control validate"> <label data-error="x" data-success="v" for="local-search-input">关键词</label></div><div class="list-group" id="local-search-result"></div></div></div></div></div></main><footer class="text-center mt-5 py-3"><div class="footer-content"><a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a></div><div class="statistics"><span id="leancloud-site-pv-container" style="display:none">总访问量 <span id="leancloud-site-pv"></span> 次 </span><span id="leancloud-site-uv-container" style="display:none">总访客数 <span id="leancloud-site-uv"></span> 人</span></div></footer><script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css"><script>NProgress.configure({showSpinner:!1,trickleSpeed:100}),NProgress.start(),window.addEventListener("load",(function(){NProgress.done()}))</script><script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script><script src="/js/events.js"></script><script src="/js/plugins.js"></script><script src="/js/img-lazyload.js"></script><script src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script><script src="/js/local-search.js"></script><script defer src="/js/leancloud.js"></script><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script><script>!function(t,i){(0,Fluid.plugins.typing)(i.getElementById("subtitle").title)}(window,document)</script><script defer>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?c9a93032e81016c3e7c8621149dd8400";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><script src="https://cdn.jsdelivr.net/gh/instantpage/instant.page@master/instantpage.min.js"></script><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><script src="/js/boot.js"></script></body></html>
